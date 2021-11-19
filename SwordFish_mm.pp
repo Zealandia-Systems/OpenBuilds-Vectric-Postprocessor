@@ -72,8 +72,6 @@ begin HEADER
 "G90"
 "G21"
 "M84 S0"
-"T[T]"
-"M6"
 "G0[ZH]"
 "G0[XH][YH]"
 "M3 [S]"
