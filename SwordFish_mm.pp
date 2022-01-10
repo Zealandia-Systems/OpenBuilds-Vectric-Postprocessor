@@ -10,10 +10,11 @@
 + ======== ========== ===========================
 + LiamB    5/11/2021  Written from Swordfish.pp
 + ScottM   21/12/2021 Added Arc Support
++ LiamB    11/01/2022 Changed Z Height, removed starting tool change. Corrected tool change error.
 
 
 
-POST_NAME = "Swordfish (*.nc)"
+POST_NAME = "Swordfish (*.gcode)"
  
 FILE_EXTENSION = "gcode"
  
@@ -73,9 +74,7 @@ begin HEADER
 "G90"
 "G21"
 "M84 S0"
-"T [T]"
-"M6"
-"G0 [ZH]"
+"G0 [SAFEZ]"
 "G0 [XH] [YH]"
 "M3 [S]"
  
@@ -152,7 +151,7 @@ begin TOOLCHANGE
 "; Tool change:"
 "; Tool [T]: [TOOLNAME]"
 "M5"
-"T [T]"
+"T[T]"
 "M6" 
 "M3 [S]"
 
@@ -166,7 +165,7 @@ begin FOOTER
 ";  COMMAND_COOLANT_OFF"
 ";  COMMAND_STOP_SPINDLE"
 "M400"
-"G0 [ZH]"
+"G0 [SAFEZ]"
 "M5" 
 "G0 [XH] [YH]"
 "M117 ;Job End"
