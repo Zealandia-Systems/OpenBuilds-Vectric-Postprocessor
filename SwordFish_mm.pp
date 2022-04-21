@@ -74,7 +74,7 @@ begin HEADER
 "G90"
 "G21"
 "M84 S0"
-"G0 [SAFEZ]"
+"G0 Z[SAFEZ]"
 "G0 [XH] [YH]"
 "M3 [S]"
  
@@ -165,7 +165,7 @@ begin FOOTER
 ";  COMMAND_COOLANT_OFF"
 ";  COMMAND_STOP_SPINDLE"
 "M400"
-"G0 [SAFEZ]"
+"G0 Z[SAFEZ]"
 "M5" 
 "G0 [XH] [YH]"
-"M117 ;Job End"
+
