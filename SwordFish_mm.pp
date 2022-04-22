@@ -1,7 +1,9 @@
 +================================================
 +                                                
 + Swordfish - Vectric machine output configuration file   
-+                                                
++                
++ homepage = "%homepage%"
++ version = "%version%"                                
 +================================================
 +                                                
 + History                                        
