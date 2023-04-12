@@ -13,6 +13,7 @@
 + LiamB    5/11/2021  Written from Swordfish.pp
 + ScottM   21/12/2021 Added Arc Support
 + LiamB    11/01/2022 Changed Z Height, removed starting tool change. Corrected tool change error.
++ LiamB    13/04/2023 Added Start Tool Change back in
 
 
 
@@ -72,7 +73,9 @@ begin HEADER
 "; Generated [DATE] [TIME]"
 " "
 ";[TOOLPATHS_OUTPUT]"
-" "	
+" "
+"T[T]"
+"M6"
 "G90"
 "G21"
 "M84 S0"
